@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <button>SayHello</button>
-</body>
+
+    <script>
+      const btn = document.querySelector("button");
+      console.log(btn);
+
+      //
+      btn.addEventListener("click", function () {
+        // console.log("hello")
+        const heading = document.createElement("h4");
+        heading.innerText = "Hello";
+
+        const body = document.querySelector("body");
+        body.appendChild(heading);
+      });
+    </script>
+  </body>
 </html>
