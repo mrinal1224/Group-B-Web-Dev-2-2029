@@ -1552,15 +1552,7 @@ Simply put, when the specific button is clicked inside the container, it gets re
 
 Today we Have solved more Fun questions and now by solving these 8-9 problems You must now have a fair bit of idea how to use javascript to manipulate the DOM , So in the next class we will put all of learnings into use and will create a RealTime Weather app bu using an external api 
 
-So in the next class we will see
-- Design a beautiful looking weather app layout
-- What is JSON?
-- What is an API and how data is stored in JSON format 
-- Fetching data from the api by using fetch method (async/await will also be used)
-- Populating the data that we fetched in specific fields
 
-
-Super Excited! for the next class , but before the next class please atleast practice these questions , Solve your assignments and Homeworks and also do make sure to revise async/await atleast because here you will see the application of asynchronous programming as well
 
 See you in the Next Class!
 
