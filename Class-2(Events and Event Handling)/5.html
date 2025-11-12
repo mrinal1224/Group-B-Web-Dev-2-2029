@@ -31,7 +31,7 @@
       }
 
       .card {
-        border: 1px solid;
+        border: 2px solid;
         height: 10rem;
         width: 10rem;
         margin: 2rem;
@@ -39,7 +39,7 @@
     </style>
   </head>
   <body>
-    <div class = "card  " data-color = "blue" data-name="Monali"></div>  
+    <div class = "card" data-color = "blue"></div>  
     <div class = "card" data-color = "red"></div>
     <div class = "card" data-color = "blue"></div>
     <div class = "card" data-color = "red"></div>
@@ -54,7 +54,18 @@
       //double clicking on them and attaches the fetched class to that card.
       // Also changes the data-color attribute to "used"
       
+      // 
+     const allCards =  document.querySelectorAll('.card')
+     console.log(allCards)
 
+
+     for(let i=0 ; i<allCards.length ; i++){
+        allCards[i].addEventListener('dblclick' , function(e){
+           
+             const color = e.target.dataset.color
+             e.target.classList.add(color)
+        })
+     }
 
 
 
