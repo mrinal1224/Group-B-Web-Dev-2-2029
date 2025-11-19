@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+:root{
+    --primary-color: #1a1d29
+}
+
+.toolbox-cont{
+    display: flex;
+    height: 5rem;
+    background-color: var(--primary-color);
+}
+
+.brand-section{
+    display: flex;
+    align-items: center;
+}
+
+.brand-title{
+    color: white;
+    margin: 1.5rem;
+}
+
+
+
