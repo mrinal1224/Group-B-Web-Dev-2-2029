@@ -18,6 +18,8 @@ font-family: "Noto Sans JP", sans-serif;
 
 .toolbox-cont{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     height: 5rem;
     background-color: var(--primary-color);
 }
@@ -30,6 +32,46 @@ font-family: "Noto Sans JP", sans-serif;
 .brand-title{
     color: white;
     margin: 1.5rem;
+}
+
+.filter-label{
+    color: white;
+}
+
+.toolbox-priority-colors{
+    display: flex;
+    align-items: center;
+}
+
+.color-filters{
+    display: flex;
+    
+    
+}
+
+.color{
+   
+    height: 3rem;
+    width: 3rem;
+    margin: 0.5rem;
+    border-radius: 50%;
+}
+
+
+.lightpink{
+background-color: lightpink;
+}
+
+.lightgreen{
+background-color: lightgreen;
+}
+
+.lightblue{
+background-color: lightblue;
+}
+
+.lightyellow{
+background-color: yellow;
 }
 
 
