@@ -258,7 +258,7 @@ body {
 
 /* Enhanced Modal Styles */
 .modal-cont {
-    display: flex;
+    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
