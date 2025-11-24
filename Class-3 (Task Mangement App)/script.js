@@ -21,14 +21,14 @@ addBtn.addEventListener("click", function () {
   // Modal Hides
 });
 
-// Create ticket
-function generateTicket() {
+// Create ticket - ticket Generation
+function generateTicket(task) {
   const ticketCont = document.createElement("div");
   ticketCont.setAttribute("class", "ticket-cont");
 
   ticketCont.innerHTML = ` <div class="ticket-color" style="background-color: lightpink;" ></div>
   <div class="ticket-id">12345</div>
-  <div  class="task-area">task Test</div>
+  <div  class="task-area">${task}</div>
    <div class="ticket-lock">
      <i class="fa-solid fa-lock"></i>
 </div>`;
@@ -40,7 +40,10 @@ mainTicketContainer.appendChild(ticketCont)
 //
 modalCont.addEventListener("keydown", function (e) {
   if (e.key == "Shift") {
-    console.log(modalTaskArea.value);
-    generateTicket();
+    const taskFromModal = modalTaskArea.value;
+    generateTicket(taskFromModal);
+    modalCont.style.display = "none";
+    modalFlag = false;
+    modalTaskArea.value = ''
   }
 });
