@@ -77,17 +77,22 @@ allPriorityColors.forEach(function (colorItem) {
 function handleLock(ticket){
    const lockContainer = ticket.querySelector('.ticket-lock')
    const lockIcon = lockContainer.children[0]
+   const taskArea = ticket.querySelector('.task-area')
 
    lockIcon.addEventListener('click' , function(){
        if(lockIcon.classList.contains(closedLock)){
         lockIcon.classList.remove(closedLock)
         lockIcon.classList.add(openedLock)
+        taskArea.setAttribute('contenteditable' , true)
+
+
 
         // task can be edited
        }else{
         lockIcon.classList.remove(openedLock)
         lockIcon.classList.add(closedLock)
         // task should be fixed
+        taskArea.setAttribute('contenteditable' , false)
        }
    })
 }
