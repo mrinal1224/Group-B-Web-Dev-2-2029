@@ -12,12 +12,25 @@ function sayHello(){
     }
 }
 
+function sayBye(){
+    for(let i=0 ; i<10 ; i++){
+        console.log("Byee")
+    }
+}
 
-setTimeout(sayHello) // make this wait
 
-// sayHello()
+
+setTimeout(sayHello , 7000) // make this wait
+setTimeout(sayBye, 5000) // make this wait
+
+
 
 console.log(b) // 20
 console.log(a) // 40
 
 console.log("End") // end
+
+
+
+
+
