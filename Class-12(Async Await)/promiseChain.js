@@ -26,14 +26,11 @@ placeOrder("coffee")
   .then(function (order) {
     console.log(order); // Order taken for coffee
     return order;
-  })
-  .then(function (placedOrder) {
-   let orderData =  processOrder(placedOrder);
-    console.log(orderData);
+  }).then(function (placedOrder) {
+    let orderData = processOrder(placedOrder);
     return orderData;
   })
-  .then(function (finalBill) {
-    let billdata = generateBill(finalBill);
-    console.log(billdata);
-    console.log("all done");
+  .then(function (orderData) {
+    let billdata = generateBill(orderData);
+    return billdata;
   });
